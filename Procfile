@@ -1,1 +1,1 @@
-web: node new.js
+web: node test.js
