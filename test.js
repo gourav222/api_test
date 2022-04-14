@@ -2,10 +2,11 @@ var express = require("express");
 var app = express();
 var cors = require("cors");
 var bodyParser = require("body-parser");
-const port = process.env.PORT || 3000;
-app.use(cors());
+
+const port = process.env.PORT || 5000;
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
+app.use(cors());
 app.get("/",(req,res) => {
     res.send("Hello");
 })
