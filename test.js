@@ -3,7 +3,7 @@ var app = express();
 var cors = require("cors");
 var bodyParser = require("body-parser");
 const port = process.env.PORT || 3000;
-app.use(cors);
+app.use(cors());
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.get("/",(req,res) => {
